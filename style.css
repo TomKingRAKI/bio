@@ -37,7 +37,6 @@ body {
 .reduce-effects .artist-card::before,
 .reduce-effects .social-icons a { transition: none !important; }
 .reduce-effects .eq span { animation: none !important; }
-.reduce-effects .fog { animation: none !important; opacity: .25; }
 
 /* Stylizacja dla tła Particles.js */
 #particles-js {
@@ -79,7 +78,6 @@ body {
     box-shadow: 0 0 0 2px rgba(255,255,255,0.04) inset;
 }
 
-.profile-header:hover .avatar,
 .avatar:hover {
     background:
       linear-gradient(#111, #111) padding-box,
@@ -540,13 +538,7 @@ img { display: block; max-width: 100%; }
     z-index: 9999;
 }
 
-/* Noise overlay nad tłem */
-body::after {
-    content: '';
-    position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: .035;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
-    background-size: 300px 300px;
-}
+/* (usunięto szum/ziarno tła – zostaje czysty gradient) */
 
 /* Ribbons na kartach */
 .corner-ribbon {
@@ -580,17 +572,4 @@ body::after {
 .eq span:nth-child(3){ animation-delay:.3s; }
 @keyframes eq { 0%,100%{ height:6px; opacity:.6 } 50%{ height:14px; opacity:1 } }
 
-/* Parallax fog overlay */
-.fog{ position:fixed; inset:0; z-index:0; pointer-events:none; filter: blur(2px); opacity:.35; background:
-    radial-gradient(40% 30% at 20% 30%, rgba(255,255,255,.04), transparent 60%),
-    radial-gradient(35% 25% at 80% 70%, rgba(255,255,255,.03), transparent 65%),
-    radial-gradient(45% 35% at 50% 60%, rgba(255,255,255,.025), transparent 70%);
-    background-size: 120% 120%, 140% 140%, 160% 160%;
-    animation: fogShift 90s linear infinite;
-}
-@keyframes fogShift{
-    0%{ background-position: 0% 0%, 100% 50%, 50% 100%; }
-    50%{ background-position: 50% 40%, 50% 60%, 60% 40%; }
-    100%{ background-position: 100% 80%, 0% 50%, 40% 0%; }
-}
-@media (prefers-reduced-motion: reduce){ .fog{ animation:none } }
+/* (usunięto mgłę/parallax – zostaje tylko gradient + particles) */
