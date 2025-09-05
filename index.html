@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio z ofertami, linkami i najnowszymi materiałami. Skontaktuj się: twoj.email@przyklad.com">
+    <meta name="theme-color" content="#232526">
+    <title>Twoja Strona z Ofertami</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div id="scroll-progress"></div>
+    <a class="skip-link" href="#main">Pomiń do treści</a>
+    <div id="particles-js"></div>
+    <div class="fog"></div>
+
+    <div class="page-wrapper">
+
+        <header class="profile-header" role="banner">
+            <div class="avatar-container">
+                <img src="awatar.jpg" alt="Avatar profilu" class="avatar" loading="lazy">
+            </div>
+            <div class="profile-info">
+                <h1>TOM KING</h1>
+                <p>Business contact: <a href="mailto:twoj.email@przyklad.com">tomszma12@gmail.com</a></p>
+            </div>
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a href="#" aria-label="X (Twitter)" title="X (Twitter)" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                <a href="#" aria-label="YouTube" title="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                <a href="#" aria-label="Twitch" title="Twitch" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitch" aria-hidden="true"></i></a>
+                <a href="#" aria-label="Kick" title="Kick" target="_blank" rel="noopener noreferrer">K</a>
+            </div>
+        </header>
+
+        <main id="main">
+            <section class="offers-section">
+                <div class="offer-card">
+                    <span class="corner-ribbon">FREE</span>
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/200x120" alt="Zrzut ekranu z gry TimberKitty" loading="lazy">
+                    </div>
+                    <div class="card-details">
+                        <h3 class="offer-title">MOJA GRA - TIMBERKITTY</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Stworzona w czystym JavaScript</li>
+                            <li><i class="fa-solid fa-check"></i> Prosta i wciÄ…gajÄ…ca rozgrywka</li>
+                            <li><i class="fa-solid fa-check"></i> MoĹĽliwoĹ›Ä‡ pobicia rekordu</li>
+                        </ul>
+                        <p class="minimum-deposit">Zagraj za darmo!</p>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://timberkitty.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">ZAGRAJ TERAZ <i class="fa-solid fa-gamepad" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">ZOBACZ KOD <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <span class="corner-ribbon">CODE</span>
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/200x120" alt="Logo oferty" loading="lazy">
+                    </div>
+                    <div class="card-details">
+                        <h3 class="offer-title">HARMONOISE</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Cecha 1 Twojej oferty</li>
+                            <li><i class="fa-solid fa-check"></i> Cecha 2 Twojej oferty</li>
+                            <li><i class="fa-solid fa-check"></i> Cecha 3 Twojej oferty</li>
+                        </ul>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-primary">GŁÓWNY PRZYCISK</a>
+                        <a href="#" class="btn btn-secondary">DRUGI PRZYCISK</a>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <span class="corner-ribbon">INFO</span>
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/200x120" alt="Logo oferty" loading="lazy">
+                    </div>
+                    <div class="card-details">
+                        <h3 class="offer-title">MONETUNE</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Atut 1</li>
+                            <li><i class="fa-solid fa-check"></i> Atut 2</li>
+                            <li><i class="fa-solid fa-check"></i> Atut 3</li>
+                        </ul>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-primary">DOWIEDZ SIÄ WIÄCEJ</a>
+                        <a href="#" class="btn btn-secondary">DRUGA OPCJA</a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="now-playing" aria-live="polite">
+                <div class="np-badge">
+                    <i class="fa-solid fa-music" aria-hidden="true"></i>
+                    <span>Now playing: </span>
+                    <strong>â€žMidnight Cathedralâ€ť</strong>
+                    <span class="eq" aria-hidden="true"><span></span><span></span><span></span></span>
+                </div>
+            </div>
+
+            <section class="artists-section" aria-labelledby="artists-title">
+                <h2 class="section-title" id="artists-title">Polecani artyĹ›ci</h2>
+                <div class="artists-grid">
+                    <article class="artist-card">
+                        <img class="artist-avatar" src="https://via.placeholder.com/96" alt="Avatar artysty 1" loading="lazy">
+                        <div class="artist-info">
+                            <h3 class="artist-name">ARTYSTA 1</h3>
+                            <p class="artist-genre">Darkwave / Gothic</p>
+                            <div class="artist-actions">
+                                <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">SPOTIFY</a>
+                                <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">YOUTUBE</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="artist-card">
+                        <img class="artist-avatar" src="https://via.placeholder.com/96" alt="Avatar artysty 2" loading="lazy">
+                        <div class="artist-info">
+                            <h3 class="artist-name">ARTYSTA 2</h3>
+                            <p class="artist-genre">Industrial / Postâ€‘metal</p>
+                            <div class="artist-actions">
+                                <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">BANDCAMP</a>
+                                <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">TELEDYSK</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="artist-card">
+                        <img class="artist-avatar" src="https://via.placeholder.com/96" alt="Avatar artysty 3" loading="lazy">
+                        <div class="artist-info">
+                            <h3 class="artist-name">ARTYSTA 3</h3>
+                            <p class="artist-genre">Blackgaze / Ambient</p>
+                            <div class="artist-actions">
+                                <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">SOUNDCLOUD</a>
+                                <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">YOUTUBE</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="youtube-section">
+                <h2 class="section-title">Najnowsze filmy YouTube</h2>
+                <div class="videos-grid">
+                    <div class="video-thumbnail">
+                        <img src="https://via.placeholder.com/400x225" alt="Miniatura filmu 1" loading="lazy">
+                    </div>
+                    <div class="video-thumbnail">
+                        <img src="https://via.placeholder.com/400x225" alt="Miniatura filmu 2" loading="lazy">
+                    </div>
+                    <div class="video-thumbnail">
+                        <img src="https://via.placeholder.com/400x225" alt="Miniatura filmu 3" loading="lazy">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script>
+                const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const saveData = (navigator.connection && navigator.connection.saveData) || false;
+        const deviceMemory = navigator.deviceMemory || 4;
+        const reduceEffects = prefersReducedMotion || saveData || deviceMemory < 6;
+        if (reduceEffects) document.body.classList.add('reduce-effects');
+
+        if (!reduceEffects) {
+            tsParticles.load('particles-js', {
+                fpsLimit: 30,
+                pauseOnBlur: true,
+                pauseOnOutsideViewport: true,
+                particles: {
+                    number: { value: 14, density: { enable: true, area: 800 } },
+                    shape: { type: 'image', image: { src: 'cross.png', width: 100, height: 100 } },
+                    opacity: { value: 0.25, random: true },
+                    size: { value: 18, random: true },
+                    links: { enable: false },
+                    move: {
+                        enable: true,
+                        speed: 0.6,
+                        direction: 'none',
+                        random: true,
+                        straight: false,
+                        outModes: { default: 'out' },
+                        bounce: false
+                    }
+                },
+                interactivity: {
+                    detectsOn: 'canvas',
+                    events: { onHover: { enable: true, mode: 'repulse' }, resize: true },
+                    modes: { repulse: { distance: 110, duration: 0.3 } }
+                },
+                detectRetina: true
+            });
+        }
+    </script>
+    <script>
+        // Scroll progress bar
+        const bar = document.getElementById('scroll-progress');
+        const updateBar = () => {
+            const h = document.documentElement;
+            const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight);
+            bar.style.width = Math.max(0, Math.min(1, scrolled)) * 100 + '%';
+        };
+        document.addEventListener('scroll', updateBar, { passive: true });
+        updateBar();
+
+        // Scroll reveal
+        const revealTargets = document.querySelectorAll('.offer-card, .artist-card, .video-thumbnail');
+        revealTargets.forEach(el => el.classList.add('reveal'));
+        const io = new IntersectionObserver((entries)=>{
+            entries.forEach(e=>{ if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target);} });
+        }, { threshold: 0.15 });
+        revealTargets.forEach(el => io.observe(el));
+
+        // Button ripple (wyłączone w trybie reduce-effects)
+        document.addEventListener('pointerdown', (e) => {
+            if (document.body.classList.contains('reduce-effects')) return;
+            const btn = e.target.closest('.btn');
+            if (!btn) return;
+            const rect = btn.getBoundingClientRect();
+            const ripple = document.createElement('span');
+            ripple.className = 'ripple';
+            ripple.style.left = (e.clientX - rect.left) + 'px';
+            ripple.style.top = (e.clientY - rect.top) + 'px';
+            btn.appendChild(ripple);
+            ripple.addEventListener('animationend', () => ripple.remove());
+        });
+
+        // Glitch/scramble for header
+        const title = document.querySelector('.profile-info h1');
+        const glyphs = 'â–â–“â–’â–‘/\\|<>+*#?%&';
+        function scramble(el, duration=600){
+            const original = el.textContent;
+            const start = performance.now();
+            function frame(now){
+                const t = Math.min(1, (now - start)/duration);
+                const out = original.split('')
+                    .map((ch,i)=> i < Math.floor(original.length * t) ? original[i] : glyphs[Math.floor(Math.random()*glyphs.length)])
+                    .join('');
+                el.textContent = out;
+                if (t < 1) requestAnimationFrame(frame); else el.textContent = original;
+            }
+            requestAnimationFrame(frame);
+        }
+        if (title) { scramble(title, 900); title.addEventListener('mouseenter', ()=>scramble(title, 500)); }
+    </script>
+    <noscript>Do peĹ‚nego efektu wĹ‚Ä…cz JavaScript (tĹ‚o czÄ…steczek).</noscript>
+</body>
+</html>
+
+
