@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio z ofertami, linkami i najnowszymi materiaĹ‚ami. Skontaktuj siÄ™: twoj.email@przyklad.com">
+    <meta name="description" content="Portfolio z ofertami, linkami i najnowszymi materiałami. Skontaktuj się: tomszma12@gmail.com">
     <meta name="theme-color" content="#232526">
     <title>Tom King BIO</title>
     <link rel="stylesheet" href="style.css">
@@ -21,6 +21,8 @@
 <body>
 
     <div class="page-wrapper">
+        <div id="particles-js" aria-hidden="true"></div>
+        <div id="scroll-progress" role="presentation"></div>
 
         <header class="profile-header" role="banner">
             <div class="avatar-container">
@@ -109,22 +111,40 @@
                 </div>
             </div>
 
-            <!--
             <section class="youtube-section">
                 <h2 class="section-title">Najnowsze filmy YouTube</h2>
                 <div class="videos-grid">
                     <div class="video-thumbnail">
-                        <img src="https://via.placeholder.com/400x225" alt="Miniatura filmu 1" loading="lazy">
+                        <div class="video-placeholder">
+                            <div class="vp-inner">
+                                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                                <span>Wkrótce</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="video-thumbnail">
-                        <img src="https://via.placeholder.com/400x225" alt="Miniatura filmu 2" loading="lazy">
+                        <div class="video-placeholder">
+                            <div class="vp-inner">
+                                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                                <span>Wkrótce</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="video-thumbnail">
-                        <img src="https://via.placeholder.com/400x225" alt="Miniatura filmu 3" loading="lazy">
+                        <div class="video-placeholder">
+                            <div class="vp-inner">
+                                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                                <span>Wkrótce</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="subscribe-cta">
+                    <a class="btn btn-subscribe" href="https://www.youtube.com/@tomkingraki" target="_blank" rel="noopener noreferrer">
+                        ZASUBSKRYBUJ, BY NIE PRZEGAPIĆ 1. FILMU <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
             </section>
-            -->
 
                         <section class="artists-section" aria-labelledby="artists-title">
                 <h2 class="section-title" id="artists-title">Polecani artyści</h2>
@@ -241,7 +261,7 @@
 
         // Glitch/scramble for header
         const title = document.querySelector('.profile-info h1');
-        const glyphs = 'Ă˘â€“ÂĂ˘â€“â€śĂ˘â€“â€™Ă˘â€“â€/\\|<>+*#?%&';
+        const glyphs = '/\\|<>+*#?%&$@!^~';
         function scramble(el, duration=600){
             const original = el.textContent;
             const start = performance.now();
@@ -257,7 +277,7 @@
         }
         if (title) { scramble(title, 900); title.addEventListener('mouseenter', ()=>scramble(title, 500)); }
     </script>
-    <noscript>Do peÄąâ€šnego efektu wÄąâ€šĂ„â€¦cz JavaScript (tÄąâ€šo czĂ„â€¦steczek).</noscript>
+    
 </body>
 </html>
 
